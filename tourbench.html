@@ -1,0 +1,27 @@
+<html>
+<head>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<Logo>Logxion</Logo>
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="tourbench.html">Tour Bench</a>
+    <a href="login.html">Login</a>
+    <a href="register.html">Register</a></nav>
+<content>
+    <Link to={`../stepslist/?tutorialid=${this.state.id}`}>
+        <div class="card">
+        <h3>{this.state.name}</h3>
+        <p>{this.state.url}</p>
+        <p className="inline"><button id="btnEdit" className="btn"><span>Edit</span></button>
+                    <button id="btnDelete" className="btn"><span>Delete</span></button></p>
+            </div></Link>
+</content>
+<footer>
+</footer>
+</body>
+
+</html
