@@ -1,24 +1,30 @@
 <html>
+
 <head>
     <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-<Logo>Logxion</Logo>
-<nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="tourbench.html">Tour Bench</a>
-    <a href="login.html">Login</a>
-    <a href="register.html">Register</a></nav>
-<content>
+    <Logo>
+        <h1>Logi<strong class="red">X</strong>On</h1>
+    </Logo>
+    <nav>
+        <ul class=main-nav>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="tourbench.html">Tour Bench</a></li>
+            <li class="push"><a href="login.html">Login</a></li>
+            <li><a href="register.html">Register</a></li>
+        </ul>
+    </nav>
+    <content>
 
-        <div className="center red-strip">
+        <div class="center red-strip">
             <h1>Login</h1>
             <form>
                 <input type="Text" placeholder="Username" required /><br />
                 <input type="password" placeholder="Password" required /><br /><br />
-                <button id="btnSubmit" className="btn"><span>Login</span></button>
+                <button id="btnSubmit" class="btn"><span>Login</span></button>
             </form>
             <br />
             <p>Don't have an account ? <a href="/register">Register</a></p>
@@ -31,9 +37,9 @@
                 <li></li>
                 <li></li>
             </ul>
-            </div>
-<footer>
-</footer>
+        </div>
+        <footer>
+        </footer>
 </body>
 
 </html
