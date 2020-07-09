@@ -1,23 +1,61 @@
-body {
-    margin: 0;
-    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    color: #606060;
+header {
+    transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    color: rgb(0, 0, 0);
+    transform-style: preserve-3d;
+    position: relative;
+    font-size: 20vh;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.red {
+    color: #febcc8;
 }
 
 
-.App {
-    height: 100%;
-    margin: 10px auto;
-    padding: 5px;
+
+nav {
+    font-size: 18px;
+    font-weight: 700;
     text-shadow: 3px 3px 5px #B9C0C9;
 }
+
+.main-nav {
+    display: flex;
+}
+
+.push {
+    margin-left: auto;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+    margin: 5px;
+}
+
+    li a {
+        display: block;
+        color: #1e1e1e;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+        li a:hover {
+            border-bottom: #febcc8 solid 2px;
+        }
+
+
+
+
+
+        
+
 
 .button_container {
     position: absolute;
@@ -94,102 +132,20 @@ input {
         transform: translateX(-9%) translateY(-25%) rotate(45deg);
     }
 
-@media screen and (min-width: 460px) {
-    body,
-    input,
-    textarea {
-        font-size: 1.1em;
-    }
-}
-
-h1 {
-    text-shadow: 3px 3px 5px #B9C0C9;
-}
-
-.red {
-    color: #febcc8;
-}
-
-
-
-
-nav {
-    font-size: 18px;
-    font-weight: 700;
-    text-shadow: 3px 3px 5px #B9C0C9;
-}
-
-.main-nav {
+.flexbox{
     display: flex;
-}
+  flex-flow: row wrap;
+  align-content: space-between;
+  justify-content: center;
 
-.push {
-    margin-left: auto;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 10px;
-    overflow: hidden;
-}
-
-li {
-    float: left;
-    margin: 5px;
-}
-
-    li a {
-        display: block;
-        color: #1e1e1e;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
     }
-
-        li a:hover {
-            border-bottom: #febcc8 solid 2px;
-        }
-
-
-
-
-
-
-
-
-header {
-    transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-    color: rgb(0, 0, 0);
-    transform-style: preserve-3d;
-    position: relative;
-    font-size: 20vh;
-}
-
-.red {
-    color: #febcc8;
-}
-
-
-
-
-
-.red-strip {
-    background: #e0fefe;
-    padding: 70px;
-}
-
-
-
-
-
-
 
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 300px;
-    margin: auto;
+    width: 300px;
+    margin: 5px;
     text-align: center;
+    padding: 10px;
 }
 
 .inline {
