@@ -12,7 +12,7 @@ header {
 
 
 
-nav {
+/*nav {
     font-size: 18px;
     font-weight: 700;
     text-shadow: 3px 3px 5px #B9C0C9;
@@ -49,11 +49,56 @@ li {
         li a:hover {
             border-bottom: #febcc8 solid 2px;
         }
+*/
 
+.topnav {
+  overflow: hidden;
+  position: relative;
+}
 
+.topnav #myLinks {
+  display: none;
+  font-size: 18px;
+    font-weight: 700;
+    text-shadow: 3px 3px 5px #B9C0C9;
+}
 
+.topnav li a {
+  display: block;
+  color: #1e1e1e;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
 
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
 
+.topnav li a:hover {
+  border-bottom: #febcc8 solid 2px;
+}
+
+.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+    margin: 5px;
+}
         
 
 
@@ -137,7 +182,6 @@ input {
   flex-flow: row wrap;
   align-content: space-between;
   justify-content: center;
-
     }
 
 .card {

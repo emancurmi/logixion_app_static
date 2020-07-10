@@ -2,21 +2,31 @@
 
 <head>
     <link href="style.css" rel="stylesheet" type="text/css" />
+    
 </head>
 
 <body>
-    <Logo>
-        <h1>Logi<strong class="red">X</strong>On</h1>
-    </Logo>
-    <nav>
-        <ul class=main-nav>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="tourbench.html">Tour Bench</a></li>
-            <li class="push"><a href="login.html">Login</a></li>
-            <li><a href="register.html">Register</a></li>
-        </ul>
-    </nav>
+    
+
+    <div class="topnav">
+        <Logo>
+            <h1>Logi<strong class="red">X</strong>On</h1>
+        </Logo>
+        
+        <nav id="myLinks">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="tourbench.html">Tour Bench</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </nav>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                +
+            </a>
+    
+</div>
     <content>
         <div class="center">
             <header>Logi</header>
@@ -28,6 +38,17 @@
     </content>
     <footer>
     </footer>
+
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myLinks");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+        </script>
 </body>
 
 </html
